@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "strict": true, //这样可以对`this`上的数据属性进行严格的推断，否则总是被视为any类型
+        "jsx": "preserve",
+        "moduleResolution": "node",
+        "baseUrl":".",
+        "paths": {
+        "@/*":["src/*"],
+        "coms/*":["src/components/*"]
+        }
+    },
+    "include": [
+        "src/**/*", "src/main.d.ts", "src/a.d.ts" //**/递归匹配任意子目录
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
